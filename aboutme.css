@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('image/background_venus.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden; /* Empêche le débordement du corps de la page */
+}
+
+.image-cliquable {
+    position: absolute;
+    top: 2.5%;  /* Ajuste selon ton besoin */
+    left: 2.5%; /* Ajuste selon ton besoin */
+    width: 10vw; /* Ajuste la taille de l'image */
+    height: auto;
+    transition: transform 0.3s ease;  /* Animation pour le survol */
+}
+
+.image-cliquable:hover {
+    transform: scale(1.5);  /* L'image grossit de 1.5x lorsqu'on la survole */
+}
+
+.fusee-image {
+    position: absolute;
+    bottom: 2.5%;
+    left: 3.5%;
+    width: 7vw;
+    height: auto;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+
+.page-title {
+    text-align: center;
+    font-size: 36px;  /* Taille du titre */
+    color: white;     /* Couleur du texte */
+    margin-top: 20px; /* Espace au-dessus du titre */
+    font-family: 'Press Start 2P', cursive; /* Appliquer la police Press Start 2P */
+}
+
+/*-------Container--------- */
+
+/* Container principal */
+.main-container {
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw; /* Largeur relative à la taille de la fenêtre */
+}
+
+/* Container centré avec disposition en ligne */
+.container {
+    display: flex; /* Flexbox pour aligner les éléments */
+    justify-content: space-between; /* Espace entre le texte et l'image */
+    align-items: center; /* Centrage vertical des éléments */
+    width: 100%; /* Largeur du container */
+    height: 20vh; /* Hauteur relative à la taille de la fenêtre */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond transparent */
+    border-radius: 15px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour effet de survol */
+}
+
+/* Effet de survol du container */
+.container:hover {
+    transform: scale(1.05); /* Légère agrandissement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
+.texte {
+    font-size: 1vw; /* Taille du texte relative à la largeur de la fenêtre */
+    color: #333;
+    width: 50%; /* Largeur du texte */
+    list-style-type: disc; /* Style des puces de la liste */
+    padding-left: 20px; /* Espace pour la puce */
+    max-height: 80%; /* Limiter la hauteur du texte */
+    overflow-y: auto; /* Ajout de barre de défilement si le texte dépasse */
+}
+
+/* Image à droite du container */
+.image {
+    max-width: 10vw; /* Largeur de l'image */
+    height: auto;
+    border-radius: 10px; /* Bords arrondis de l'image */
+    max-height: 100%; /* Limiter la hauteur de l'image au container */
+}
+
+/* Ajouter de l'espace entre le texte et l'image */
+.container > .texte {
+    margin-right: 20px;
+}
+
+/* Containers verticaux sous le container principal */
+.container-bas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Largeur des containers bas */
+    margin-top: 20px; /* Marge entre les containers */
+}
+
+/* Styles des containers verticaux */
+.vertical-container {
+    width: 21vw; /* Largeur de chaque container */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond transparent */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour effet de survol */
+}
+
+/* Effet de survol des containers verticaux */
+.vertical-container:hover {
+    transform: scale(1.05); /* Légère agrandissement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
+/* Image dans le container vertical */
+.vertical-image {
+    width: 5vw; /* Image prend toute la largeur du container */
+    height: auto;
+    border-radius: 10px; /* Bords arrondis de l'image */
+    margin-bottom: 10px; /* Marge en dessous de l'image */
+}
+
+/* Liste dans le container vertical */
+.vertical-list {
+    list-style-type: disc; /* Puces de la liste */
+    padding-left: 20px; /* Espace pour les puces */
+    font-size: 1.2em; /* Taille du texte */
+    color: #333;
+    overflow-y: auto; /* Ajout de barre de défilement si le texte dépasse */
+}

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('image/background_uranus.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden; /* Empêche le débordement du corps de la page */
+}
+
+.image-cliquable {
+    position: absolute;
+    top: 2.5%;  /* Ajuste selon ton besoin */
+    left: 2.5%; /* Ajuste selon ton besoin */
+    width: 10vw; /* Ajuste la taille de l'image */
+    height: auto;
+    transition: transform 0.3s ease;  /* Animation pour le survol */
+}
+
+.image-cliquable:hover {
+    transform: scale(1.5);  /* L'image grossit de 1.5x lorsqu'on la survole */
+}
+
+.fusee-image {
+    position: absolute;
+    bottom: 2.5%;
+    left: 3.5%;
+    width: 7vw;
+    height: auto;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+
+
+
+.page-title {
+    text-align: center;
+    font-size: 36px;  /* Taille du titre */
+    color: white;     /* Couleur du texte */
+    margin-top: 20px; /* Espace au-dessus du titre */
+    font-family: 'Press Start 2P', cursive; /* Appliquer la police Press Start 2P */
+}
+
+
+
+
+.rectangle {
+    position: absolute;
+    width: 20vw;  /* Largeur du rectangle ajustée (responsive) */
+    max-height: 30vh; /* Hauteur maximale du rectangle ajustée pour qu'il ne dépasse pas l'écran */
+    background-color: rgba(255, 255, 255, 0.7);  /* Couleur et transparence */
+    border: 2px solid #fff;  /* Bordure blanche */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start; /* Aligner verticalement le contenu au sommet */
+    align-items: center; /* Centrer horizontalement le contenu */
+    flex-direction: column;  /* Organiser le contenu en colonne */
+    padding: 10px; /* Ajouter de l'espace autour du contenu */
+    text-align: center; /* Centrer le texte */
+    overflow-y: auto; /* Permettre le défilement vertical si nécessaire */
+    top: calc(15vh); /* Positionnement dynamique en fonction de la hauteur de l'écran */
+    left: calc(10vw); /* Positionnement dynamique en fonction de la largeur de l'écran */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Commencer l'alignement vertical au sommet */
+    align-items: center;  /* Centrer horizontalement le contenu */
+    height: auto; /* La hauteur s'ajuste en fonction du contenu */
+    width: 100%;
+}
+
+
+.blue-table {
+    width: 90%;  /* Largeur du tableau ajustée */
+    border-collapse: collapse;  /* Pour éviter les doubles bordures */
+    margin-top: 10px;  /* Ajouter un peu d'espace entre le titre et le tableau */
+}
+
+.blue-table td, .blue-table th {
+    border: 1px solid #000;  /* Bordure noire */
+    padding: 8px;  /* Espacement dans les cellules */
+    text-align: center;  /* Aligner le texte au centre */
+}
+
+.blue-table {
+    background-color: #2646a2;  /* Fond bleu pour le tableau */
+    color: white;  /* Couleur du texte */
+}

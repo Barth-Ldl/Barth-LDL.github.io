@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #000b1e, #000311 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.earth {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rocket {
+  position: absolute;
+  width: 5vw; /* Ajustez la taille de la fusée */
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.planet {
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.planet1 {
+  width: 4vw;
+  height: 4vw;
+  top: 20%;
+  left: 30%;
+}
+
+.planet2 {
+  width: 5vw;
+  height: 5vw;
+  top: 10%;
+  right: 25%;
+}
+
+.planet3 {
+  width: 6vw;
+  height: 6vw;
+  bottom: 15%;
+  left: 20%;
+}
+
+.planet4 {
+  width: 7vw;
+  height: 7vw;
+  bottom: 25%;
+  right: 30%;
+}
+
+.planet5 {
+  width: 8vw;
+  height: 8vw;
+  top: 40%;
+  left: 80%;
+}
+
+.planet:hover {
+  transform: scale(1.5);
+}
+
+/* Style pour les liens cliquables */
+.planet-link {
+  display: block;
+  text-decoration: none;  /* Supprime le soulignement des liens */
+}
+
+.planet-link:hover {
+  opacity: 0.7;  /* Ajoute un effet de survol sur le lien */
+}
