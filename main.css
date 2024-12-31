@@ -26,7 +26,7 @@ body {
 
 .rocket {
   position: absolute;
-  width: 5vw; /* Ajustez la taille de la fusée */
+  width: 5vw;
   height: auto;
   top: 50%;
   left: 50%;
@@ -78,12 +78,11 @@ body {
   transform: scale(1.5);
 }
 
-/* Style pour les liens cliquables */
 .planet-link {
   display: block;
-  text-decoration: none;  /* Supprime le soulignement des liens */
+  text-decoration: none;
 }
 
 .planet-link:hover {
-  opacity: 0.7;  /* Ajoute un effet de survol sur le lien */
+  opacity: 0.7;
 }
