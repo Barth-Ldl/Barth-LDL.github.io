@@ -9,20 +9,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    overflow: hidden; /* Empêche le débordement du corps de la page */
+    overflow: hidden;
 }
 
 .image-cliquable {
     position: absolute;
-    top: 2.5%;  /* Ajuste selon ton besoin */
-    left: 2.5%; /* Ajuste selon ton besoin */
-    width: 10vw; /* Ajuste la taille de l'image */
+    top: 2.5%;  
+    left: 2.5%; 
+    width: 10vw; 
     height: auto;
-    transition: transform 0.3s ease;  /* Animation pour le survol */
+    transition: transform 0.3s ease;  
 }
 
 .image-cliquable:hover {
-    transform: scale(1.5);  /* L'image grossit de 1.5x lorsqu'on la survole */
+    transform: scale(1.5);  
 }
 
 .fusee-image {
@@ -39,10 +39,10 @@ body {
 
 .page-title {
     text-align: center;
-    font-size: 36px;  /* Taille du titre */
-    color: white;     /* Couleur du texte */
-    margin-top: 20px; /* Espace au-dessus du titre */
-    font-family: 'Press Start 2P', cursive; /* Appliquer la police Press Start 2P */
+    font-size: 36px;  
+    color: white;     
+    margin-top: 20px; 
+    font-family: 'Press Start 2P', cursive; 
 }
 
 
@@ -50,45 +50,45 @@ body {
 
 .rectangle {
     position: absolute;
-    width: 20vw;  /* Largeur du rectangle ajustée (responsive) */
-    max-height: 30vh; /* Hauteur maximale du rectangle ajustée pour qu'il ne dépasse pas l'écran */
-    background-color: rgba(255, 255, 255, 0.7);  /* Couleur et transparence */
-    border: 2px solid #fff;  /* Bordure blanche */
+    width: 20vw;  
+    max-height: 30vh; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: 2px solid #fff; 
     box-sizing: border-box;
     display: flex;
-    justify-content: flex-start; /* Aligner verticalement le contenu au sommet */
-    align-items: center; /* Centrer horizontalement le contenu */
-    flex-direction: column;  /* Organiser le contenu en colonne */
-    padding: 10px; /* Ajouter de l'espace autour du contenu */
-    text-align: center; /* Centrer le texte */
-    overflow-y: auto; /* Permettre le défilement vertical si nécessaire */
-    top: calc(15vh); /* Positionnement dynamique en fonction de la hauteur de l'écran */
-    left: calc(10vw); /* Positionnement dynamique en fonction de la largeur de l'écran */
+    justify-content: flex-start;
+    align-items: center; 
+    flex-direction: column; 
+    padding: 10px; 
+    text-align: center; 
+    overflow-y: auto; 
+    top: calc(15vh); 
+    left: calc(10vw); 
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  /* Commencer l'alignement vertical au sommet */
-    align-items: center;  /* Centrer horizontalement le contenu */
-    height: auto; /* La hauteur s'ajuste en fonction du contenu */
+    justify-content: flex-start;  
+    align-items: center;  
+    height: auto; 
     width: 100%;
 }
 
 
 .blue-table {
-    width: 90%;  /* Largeur du tableau ajustée */
-    border-collapse: collapse;  /* Pour éviter les doubles bordures */
-    margin-top: 10px;  /* Ajouter un peu d'espace entre le titre et le tableau */
+    width: 90%;  
+    border-collapse: collapse; 
+    margin-top: 10px;  
 }
 
 .blue-table td, .blue-table th {
-    border: 1px solid #000;  /* Bordure noire */
-    padding: 8px;  /* Espacement dans les cellules */
-    text-align: center;  /* Aligner le texte au centre */
+    border: 1px solid #000;  
+    padding: 8px;  
+    text-align: center;  
 }
 
 .blue-table {
-    background-color: #2646a2;  /* Fond bleu pour le tableau */
-    color: white;  /* Couleur du texte */
+    background-color: #2646a2;  
+    color: white; 
 }
