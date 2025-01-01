@@ -32,7 +32,7 @@ smallPlanets.forEach(planet => {
         } else if (planetId == '3') {
             titleText = "Site Web Toulouse";
             infoText = "Il y a 4 ans, je me suis lancé dans la création d'un site internet qui présentait la ville de Toulouse. J'y parle de son histoire, de ses activités, de son sport, etc.";
-            imageSrc = "image/Toulouse.png";
+            imageSrc = "image/toulouse.png";
             afterImageText = "Ce projet a été fait en HTML et CSS.";
         }
 
