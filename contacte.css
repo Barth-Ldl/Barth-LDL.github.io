@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('image/moon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-cliquable {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    width: 10vw;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-cliquable:hover {
+    transform: scale(1.5);
+}
+
+.fusee-image {
+    position: absolute;
+    bottom: 2.5%;
+    left: 3.5%;
+    width: 7vw;
+    height: auto;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+
+.page-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    z-index: 10;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 40vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.texte {
+    font-size: 1vw;
+    color: #333;
+    width: 100%;
+    padding-left: 20px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #155bb5;
+}
+
+.container > .texte {
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    font-size: 1.2vw;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
